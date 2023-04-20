@@ -1,10 +1,10 @@
 # Patika.dev-SQL-dev-8
 Patika.dev &amp; FMSS İş Analisti Practicum SQL ödevi
 
-#### test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+#### 1. Test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
 <code> CRETAE TABLE employee( id INTEGER PRIMARY KEY, name VARCHAR(50) NOT NULL, birthday DATE, email VARCHAR(50) NOT NULL); </code>
 
-#### Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+#### 2. Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
 <code> 
 insert into employee (id, name, birthday, email) values (1, 'Fredelia', '1968-10-07', 'fnewton0@networksolutions.com');
 insert into employee (id, name, birthday, email) values (2, 'Zola', '1985-12-26', 'zfalls1@mozilla.org');
@@ -58,7 +58,7 @@ insert into employee (id, name, birthday, email) values (49, 'Peder', '1999-10-1
 insert into employee (id, name, birthday, email) values (50, 'Andie', '1971-03-05', 'azavittieri1d@people.com.cn'); 
 </code>
 
-#### Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+#### 3. Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
 <code> 
 UPDATE employee
 SET name= 'Patika'
@@ -90,7 +90,7 @@ SET email= 'istanbul.com.tr'
 WHERE birthday = '1990-06-22'
 RETURNING*; </code>
 
-#### Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+#### 4. Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 <code> 
 DELETE FROM employee
 WHERE id = 10
