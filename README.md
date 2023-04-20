@@ -1,4 +1,4 @@
-# Patika.dev-SQL-dev-8
+# Patika.dev-SQL-ödev-8
 Patika.dev &amp; FMSS İş Analisti Practicum SQL ödevi
 
 #### 1. Test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
